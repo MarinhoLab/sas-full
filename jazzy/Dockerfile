@@ -15,4 +15,4 @@ RUN python3 -m pip install --upgrade dqrobotics --break-system-packages
 # Run install script
 COPY jazzy/install.sh /root/install.sh
 WORKDIR /root/
-RUN chmod +x install.sh && . install.sh && rm install.sh
+RUN chmod +x install.sh && bash install.sh && rm install.sh
